@@ -14,7 +14,7 @@ function App() {
     <TitleSection />
     <ReportFile></ReportFile>
     <StudentTable />
-    {/* <Footer /> */}
+    <Footer />
       {/* <h2>hello</h2> */}
       </div>
     </>

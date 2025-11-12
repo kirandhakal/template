@@ -6,21 +6,21 @@ export const Footer = () => {
    <div className="footer">
        <div className="form-grid-3">
             <div className="form-field">
-               <p className="form-text">...............</p>
+               <p className="form-text">.........................</p>
                {/* <p className="form-text">{'{assessedBy}'}</p> */}
-              <label className="form-label">Assessed by</label>
+              <label className="footer-form-label">Assessed by</label>
              
             </div>
             <div className="form-field">
               {/* <p className="form-text">{'{issuedDate}'}</p> */}
-              <p className="form-text">...................</p>
-              <label className="form-label">Issued Date</label>
+              <p className="form-text">..........................</p>
+              <label className="footer-form-label">Issued Date</label>
               
             </div>
             <div className="form-field">
                {/* <p className="form-text">{'{executiveChairman}'}</p> */}
-                <p className="form-text">.....................</p>
-              <label className="form-label">Executive Chairman</label>
+                <p className="form-text">...........................</p>
+              <label className="footer-form-label">Executive Chairman</label>
              
             </div>
           </div>

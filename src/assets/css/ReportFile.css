@@ -1,6 +1,6 @@
 /*  Report Wrapper */
 .report-wrapper {
-  max-width: 1280px;
+  max-width: 980px;
   margin: 0 auto;
   background-color: #fff;
   border-radius: 0.5rem;
@@ -12,10 +12,10 @@
 /* header */
 .header {
   display: flex;
- justify-content: space-between;
-  align-items: center; 
+  justify-content: space-between;
+  align-items: center;
   padding: 10px 20px;
-  background:  linear-gradient(to bottom right, #281ccf, #00f2fe);
+  background: linear-gradient(to bottom right, #281ccf, #00f2fe);
   border-bottom: 1px solid #ddd;
 }
 
@@ -27,10 +27,10 @@
 
 .header-text {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-grow: 1; 
+  flex-grow: 1;
   color: white;
 }
 
@@ -56,33 +56,39 @@
   margin-left: 16px;
 }
 
-
 /* 🏫 Title */
 .title {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  font-weight:bolder;
-  font-size: 0.5rem;
+  
   color: #e43804;
   /* margin: 0.8rem 0; */
   text-transform: uppercase;
+  background-color: white;
+
 }
 
 .title img {
   width: 100px;
   height: 80px;
-    padding: 1rem;
+  padding: 1rem;
+}
+.title h1{
+    padding: 0 6rem;
+    font-weight: 1000;
+  font-size: 2rem;
 }
 
-/* 🧾 Info Section */
-.form-section {
+/* 🧾 report-form- Section */
+.report-form-section {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
   font-family: "Segoe UI", Arial, sans-serif;
+  background-color: white;
 }
 
 /* Each form field block */
@@ -96,7 +102,13 @@
   margin-bottom: 4px;
   color: #333;
 }
-
+.other-label {
+  margin-left: -165px;
+}
+.school {
+  margin-top: 1rem;
+  margin-left: -125px;
+}
 /* Dynamic text with dotted underline effect */
 .form-text {
   position: relative;
@@ -127,14 +139,12 @@
   gap: 1rem;
 }
 
-
 /* Three columns for Class, Section, Assessment Date */
 .form-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
 }
-
 
 .form-grid-4,
 .form-grid-3 {
@@ -143,8 +153,6 @@
   gap: 1rem;
   margin-bottom: 1rem;
 }
-
-
 
 .form-field {
   display: flex;
@@ -157,8 +165,8 @@
   color: #374151;
   margin-bottom: 0.25rem;
 }
-.school{
-    width: 100%;
+.school {
+  width: 100%;
 }
 
 .form-text {
@@ -172,72 +180,120 @@
   min-height: 35px;
 }
 
-/*  Table  */
+/*  Table-----------------------------  */
 .table-container {
+  width: 100%;
   overflow-x: auto;
-  margin-top: 0.5rem;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  color: rgb(5, 5, 5);
 }
 
+/* TABLE STYLES */
 .data-table {
   width: 100%;
   border-collapse: collapse;
-  margin-bottom: 2rem;
-}
-
-th,
-td {
-  /* border: 1px solid #9ca3af; */
-  padding: 0.5rem;
   text-align: center;
-  font-size: 0.875rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  color: #17191a;
 }
 
-th {
-  background-color: #e0e7ff;
-  font-weight: 700;
-  text-transform: uppercase;
+/* HEADER STYLING */
+.data-table thead th {
+  /* background-color: #dddddd; */
+  color: rgb(64, 62, 196);
+  padding: 10px;
+  border: 1px solid #d0d0d0;
+  background-color: rgb(172, 140, 140);
 }
 
-.th-language {
-  background-color: #c7d2fe;
-  font-size: 0.95rem;
-  letter-spacing: 0.03em;
-}
-
-.th-name {
-  min-width: 220px;
+.data-table thead th.th-name {
+  min-width: 200px;
   text-align: left;
-  padding-left: 1rem;
+  padding-left: 10px;
 }
 
-.table-row:nth-child(even) {
-  background-color: #f9fafb;
+.data-table thead th.th-sn {
+  width: 60px;
 }
 
-.td-name {
-  text-align: left;
-  padding-left: 0.75rem;
+.data-table thead th.th-language {
+  /* background-color: #6693d6; */
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
 
-
-.td-text {
-  display: block;
-  padding: 0.3rem 0.2rem;
-  font-size: 0.875rem;
-  color: #111827;
+.data-table thead th.th-metric {
+  /* background-color: #d3d6da; */
+  font-weight: 500;
 }
 
+/* BODY STYLING */
+.data-table tbody td {
+  border: 1px solid #dcdcdc;
+  padding: 8px;
+}
 
+.data-table tbody tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
 
+.data-table tbody tr:hover {
+  background-color: #eaf2ff;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.data-table tbody td:first-child {
+  font-weight: 600;
+  color: #333;
+}
 
 /* footer----------------------- */
-.footer{
-    background-color: white;
-   
-     max-width: 1280px;
+/* .footer {
+  background-color: white;
+
+  max-width: 1280px;
   margin: 0 auto;
 }
 .footer .form-label {
   color: red;
+} */
 
+.footer {
+  margin-top: 30px;
+  padding: 20px;
+  
+}
+
+.form-grid-3 {
+  display: flex;
+  justify-content: space-between;
+  /* gap: 40px; */
+  flex-wrap: wrap; /
+}
+
+.form-field {
+  flex: 1; 
+  min-width: 200px; 
+  text-align: center;
+}
+
+.form-text {
+  /* border-bottom: 1px solid #000; */
+  display: inline-block;
+  width: 100%;
+  /* padding-bottom: 5px;
+  margin-bottom: 8px; */
+  font-size: 16px;
+}
+
+.footer-form-label {
+  display: block;
+  font-weight: bold;
+  font-size: 14px;
+  /* text-transform: uppercase; */
+  color: red;
 }
