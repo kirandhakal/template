@@ -1,5 +1,5 @@
 /*  Report Wrapper */
-.report-wrapper {
+/* .report-wrapper {
   max-width: 980px;
   margin: 0 auto;
   background-color: #fff;
@@ -7,16 +7,26 @@
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   color: #1f2937;
-}
+} */
 
 /* header */
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
-  background: linear-gradient(to bottom right, #281ccf, #00f2fe);
+  padding: 12px 24px;
+  padding-top: 24px;
+  /* background: linear-gradient(to right, #281ccf, #00f2fe); */
+    /* background: linear-gradient(to right,#00f2fe, #281ccf); */
+    background: linear-gradient(
+    to right,
+    #7db9e8 0%,
+    #075697 62%,
+    #2b3ac2 99%,
+    #0e0c92 100%
+  );
   border-bottom: 1px solid #ddd;
+
 }
 
 .header-img {
@@ -25,7 +35,7 @@
   object-fit: contain;
   background-color: whitesmoke;
   margin-top: 5px;
-  padding: 0 10px;
+  /* padding: 0 10px; */
   border-radius: 5px;
 }
 
@@ -75,7 +85,7 @@ font-weight: 900;
   display: flex;
   align-items: center;
   justify-content: center;
-    /* padding: 10px 20px; */
+    padding: 10px 15px;
   /* gap: 1rem; */
   color: #e43804;
   /* margin: 0.8rem 0; */
@@ -87,7 +97,7 @@ font-weight: 900;
 .title img {
   width: 120px;
   height: 50px;
-  padding: 0.rem ;
+  padding: 0.5rem ;
 }
 .title h1{
     padding: 0 4rem;
@@ -178,10 +188,11 @@ font-weight: 900;
 /* HEADER STYLING */
 .data-table thead th {
   /* background-color: #dddddd; */
-  color: rgb(64, 62, 196);
+  /* color: rgb(64, 62, 196); */
+  color: #403EC4;
   /* padding: 5px; */
-  border: 1px solid blue;
-  background-color: rgb(147 135 195);
+  border: 1px solid #27409C;
+  background-color: #C7CCE6;
 
 }
 
@@ -193,13 +204,14 @@ font-weight: 900;
 
 .data-table thead th.th-sn {
   width: 0px;
-  color: blue;
+  /* color: blue; */
+  color: #403EC4;
 }
 
 .data-table thead th.th-language {
   /* background-color: #6693d6; */
-  font-weight: 800;
-  letter-spacing: 1.1px;
+  font-weight:bolder;
+  letter-spacing: 1px;
 }
 
 .data-table thead th.th-metric {
@@ -213,19 +225,7 @@ font-weight: 900;
   padding: 8px;
 }
 
-.data-table tbody tr:nth-child(even) {
-  background-color: #f8f9fa;
-}
 
-.data-table tbody tr:hover {
-  background-color: #eaf2ff;
-  transition: background-color 0.2s ease-in-out;
-}
-
-.data-table tbody td:first-child {
-  font-weight: 800;
-  color: #333;
-}
 
 /* -------------------------------footer----------------------- */
 

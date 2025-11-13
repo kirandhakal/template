@@ -9,7 +9,7 @@ function App() {
   
   return (
     <>
-    <div className="conatiner">
+    <div className="app">
     <Header></Header>
     <TitleSection />
     <ReportFile></ReportFile>
