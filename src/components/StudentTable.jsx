@@ -1,4 +1,3 @@
-import React from "react";
 import "../assets/css/ReportFile.css";
 
 export const StudentTable = () => {
@@ -39,7 +38,7 @@ export const StudentTable = () => {
             {/* {'{studentsRows}'} */}
 
             <tr>
-              <td>1</td>
+              <td>1.</td>
               <td>John Doe</td>
               <td>A</td>
               <td>B</td>
@@ -54,7 +53,7 @@ export const StudentTable = () => {
               <td>A</td>
               <td>B</td>
             </tr>
-            <tr>
+            {/* <tr>
               <td>2</td>
               <td>John Doe</td>
               <td>A</td>
@@ -69,7 +68,7 @@ export const StudentTable = () => {
               <td>C</td>
               <td>A</td>
               <td>B</td>
-            </tr>
+            </tr> */}
           </tbody>
         </table>
       </div>

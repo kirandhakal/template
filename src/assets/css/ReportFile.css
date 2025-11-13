@@ -20,9 +20,13 @@
 }
 
 .header-img {
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   object-fit: contain;
+  background-color: whitesmoke;
+  margin-top: 5px;
+  padding: 0 10px;
+  border-radius: 5px;
 }
 
 .header-text {
@@ -32,22 +36,32 @@
   justify-content: center;
   flex-grow: 1;
   color: white;
+ 
 }
 
 .header-title {
   font-size: 20px;
   font-weight: bold;
   margin: 0;
-  color: #333;
-  padding: 25px;
+   font-size: 2.5rem;
+font-weight: 900;
+  padding: 10px;
 }
 
 .header-subtitle {
   font-size: 14px;
-  color: #666;
-  margin: 4px 0 0 0;
+ font-size: 1.5rem;
+  margin: 2px 0 0 0;
 }
-
+/* .image{
+  background-color: white;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+} */
 .left-img {
   margin-right: 16px;
 }
@@ -56,13 +70,13 @@
   margin-left: 16px;
 }
 
-/* 🏫 Title */
+/* ---------------------------- Title ------------------------------*/
 .title {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
-  
+    /* padding: 10px 20px; */
+  /* gap: 1rem; */
   color: #e43804;
   /* margin: 0.8rem 0; */
   text-transform: uppercase;
@@ -71,121 +85,80 @@
 }
 
 .title img {
-  width: 100px;
-  height: 80px;
-  padding: 1rem;
+  width: 120px;
+  height: 50px;
+  padding: 0.rem ;
 }
 .title h1{
-    padding: 0 6rem;
+    padding: 0 4rem;
     font-weight: 1000;
   font-size: 2rem;
+    letter-spacing:-2px;
 }
 
 /* 🧾 report-form- Section */
-.report-form-section {
+.ReportFile {
+  color: rgb(19, 17, 17);
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  font-family: "Segoe UI", Arial, sans-serif;
+
+  margin-right: 10px;
+  /* padding: 0 5px; */
   background-color: white;
+  
 }
 
-/* Each form field block */
-.form-field {
+.description {
   display: flex;
   flex-direction: column;
+  gap: 8px;
+  padding: 0 25px;
 }
 
-.form-label {
-  font-weight: bold;
-  margin-bottom: 4px;
-  color: #333;
-}
-.other-label {
-  margin-left: -165px;
-}
 .school {
-  margin-top: 1rem;
-  margin-left: -125px;
-}
-/* Dynamic text with dotted underline effect */
-.form-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  white-space: nowrap;
   position: relative;
-  padding: 4px 0;
-  color: #222;
 }
 
-/* Dotted line across width */
-.form-text::after {
+.school .dots::before {
   content: "";
-  display: block;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-bottom: 1px dotted #999;
-  z-index: -1;
+  flex-grow: 1;
+  border-bottom: 1px dotted #888;
+  margin-left: 10px;
 }
 
-.form-field.school {
-  width: 100%;
-}
-
-/* Three-column grid for Class, Section, Assessment Date */
-.form-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-}
-
-/* Three columns for Class, Section, Assessment Date */
-.form-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-}
-
-.form-grid-4,
-.form-grid-3 {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-  margin-bottom: 1rem;
-}
-
-.form-field {
+/* INFO ROW — all inline and shared width */
+.info-row {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
 }
 
-.form-label {
-  font-size: 0.875rem;
-  font-weight: 600;
-  color: #374151;
-  margin-bottom: 0.25rem;
-}
-.school {
-  width: 100%;
+.info-row  {
+  display: flex;
+   justify-content: space-between;
+  align-items: center;
+  flex: 1;
+ 
 }
 
-.form-text {
-  font-size: 0.95rem;
-  font-weight: 500;
-  color: #1f2937;
-  padding: 0.4rem 0.75rem;
-  /* border: 1px solid #d1d5db;
-  border-radius: 0.4rem; */
-  background-color: #fff;
-  min-height: 35px;
+.info-row .dots::before {
+  content: "";
+  flex-grow: 1;
+  /* border-bottom: 1px dotted #888; */
+  margin-left: 8px;
 }
 
-/*  Table-----------------------------  */
+/*  */
+/* ------------------------------- Table-----------------------------  */
 .table-container {
-  width: 100%;
+  /* width: 100%; */
   overflow-x: auto;
-  margin: 20px 0;
-  border-radius: 8px;
+    padding: 10px 20px;
+  /* margin: 20px 0; */
+  /* border-radius: 8px; */
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   background-color: #fff;
   color: rgb(5, 5, 5);
@@ -197,33 +170,36 @@
   border-collapse: collapse;
   text-align: center;
   font-family: "Poppins", sans-serif;
-  font-size: 14px;
+  /* font-size: 14px; */
   color: #17191a;
+  
 }
 
 /* HEADER STYLING */
 .data-table thead th {
   /* background-color: #dddddd; */
   color: rgb(64, 62, 196);
-  padding: 10px;
-  border: 1px solid #d0d0d0;
-  background-color: rgb(172, 140, 140);
+  /* padding: 5px; */
+  border: 1px solid blue;
+  background-color: rgb(147 135 195);
+
 }
 
 .data-table thead th.th-name {
   min-width: 200px;
-  text-align: left;
+  text-align: center;
   padding-left: 10px;
 }
 
 .data-table thead th.th-sn {
-  width: 60px;
+  width: 0px;
+  color: blue;
 }
 
 .data-table thead th.th-language {
   /* background-color: #6693d6; */
-  font-weight: 600;
-  letter-spacing: 0.5px;
+  font-weight: 800;
+  letter-spacing: 1.1px;
 }
 
 .data-table thead th.th-metric {
@@ -233,7 +209,7 @@
 
 /* BODY STYLING */
 .data-table tbody td {
-  border: 1px solid #dcdcdc;
+  border: 1px solid blue;;
   padding: 8px;
 }
 
@@ -247,27 +223,20 @@
 }
 
 .data-table tbody td:first-child {
-  font-weight: 600;
+  font-weight: 800;
   color: #333;
 }
 
-/* footer----------------------- */
-/* .footer {
-  background-color: white;
+/* -------------------------------footer----------------------- */
 
-  max-width: 1280px;
-  margin: 0 auto;
-}
-.footer .form-label {
-  color: red;
-} */
 
 .footer {
-  margin-top: 30px;
+  /* margin-top: 30px; */
+    padding: 10px 20px;
   padding: 20px;
+  background-color: white;
   
 }
-
 .form-grid-3 {
   display: flex;
   justify-content: space-between;
@@ -276,14 +245,15 @@
 }
 
 .form-field {
-  flex: 1; 
-  min-width: 200px; 
+  /* flex: 1;  */
+  /* min-width: 200px;  */
   text-align: center;
 }
 
 .form-text {
   /* border-bottom: 1px solid #000; */
   display: inline-block;
+  color: black;
   width: 100%;
   /* padding-bottom: 5px;
   margin-bottom: 8px; */

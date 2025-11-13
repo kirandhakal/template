@@ -19,7 +19,9 @@
 }
 .conatiner {
   min-height: 50vh;
-  background-color: #f9fafb;
+  /* background-color: #f9fafb; */
   padding: 1rem;
+  width: 100%;
+  /* max-width: 1000px;; */
   
 }
