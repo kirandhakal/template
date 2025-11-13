@@ -1,18 +1,20 @@
-import React from 'react'
+import React from "react";
+import { Footer } from "./components/Footer";
+import Header from "./components/Header";
+import PersonalDetaileFile from "./components/PersonalDetaileFIle";
+import { TitleSection } from "./components/TitleSection";
+import TableComponents from "./components/TableComponents";
 
-import { Footer } from './components/Footer'
-import Header from './components/Header'
-// import { StudentTable } from './components/StudentTable'
-import { TitleSection } from './components/TitleSection'
+import { IssusedDate } from "./components/IssusedDate";
 export const PersonalReading = () => {
   return (
-   <>
-
-        <Header></Header>
-    <TitleSection />
-
-   
-    <Footer />
-   </>
-  )
-}
+    <>
+      <Header></Header>
+      <TitleSection />
+<PersonalDetaileFile />
+        <TableComponents />
+      <IssusedDate />
+      <Footer />
+    </>
+  );
+};
