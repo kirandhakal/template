@@ -15,8 +15,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 12px 24px;
-  padding-top: 24px;
-  /* background: linear-gradient(to right, #281ccf, #00f2fe); */
+ 
     /* background: linear-gradient(to right,#00f2fe, #281ccf); */
     background: linear-gradient(
     to right,
@@ -26,6 +25,7 @@
     #0e0c92 100%
   );
   border-bottom: 1px solid #ddd;
+  margin: 0;
 
 }
 
@@ -100,10 +100,10 @@ font-weight: 900;
   padding: 0.5rem ;
 }
 .title h1{
-    padding: 0 4rem;
-    font-weight: 1000;
-  font-size: 2rem;
-    letter-spacing:-2px;
+    padding: 0 2rem;
+    font-weight: 900;
+  font-size: 1.5rem;
+    letter-spacing:-1px;
 }
 
 /* 🧾 report-form- Section */
@@ -161,7 +161,7 @@ font-weight: 900;
   margin-left: 8px;
 }
 
-/*  */
+
 /* ------------------------------- Table-----------------------------  */
 .table-container {
   /* width: 100%; */
@@ -204,19 +204,20 @@ font-weight: 900;
 
 .data-table thead th.th-sn {
   width: 0px;
-  /* color: blue; */
-  color: #403EC4;
+  color: blue;
+
 }
 
 .data-table thead th.th-language {
   /* background-color: #6693d6; */
-  font-weight:bolder;
+  font-weight:900;
   letter-spacing: 1px;
 }
 
 .data-table thead th.th-metric {
   /* background-color: #d3d6da; */
   font-weight: 500;
+  color: #131314;
 }
 
 /* BODY STYLING */
