@@ -52,6 +52,8 @@ const nepaliSkills = [
       </table>
           
       <h2>नेपाली</h2 >
+
+      <h1>नेपाली</h1>
       <table>
         <thead>
           <tr>
