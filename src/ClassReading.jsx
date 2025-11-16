@@ -12,7 +12,7 @@ export const ClassReading = () => {
      <Header></Header>
     <TitleSection />
     <DetaileFile></DetaileFile>
-    {/* <StudentTable /> */}
+    <StudentTable />
     <Footer />
     </>
   )

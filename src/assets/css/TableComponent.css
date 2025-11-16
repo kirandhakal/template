@@ -12,7 +12,8 @@
       width: 100%;
       border-collapse: collapse;
       border: 2px solid #7db9e8; /* Outer table border in blue */
-      margin-bottom: 30px;
+      margin-bottom: 10px;
+      max-height: 800px;
     }
 
     th, td {

@@ -9,6 +9,7 @@ import TableComponents from './components/TableComponents'
 export const SchoolReading = () => {
   return (
     <>
+    <div className="schoolReading">
   <Header></Header>
   <TitleSection Name={"SCHOOL"}/>
   <DetaileFile></DetaileFile>
@@ -16,6 +17,7 @@ export const SchoolReading = () => {
 
  {/* <TableComponents /> */}
   <Footer />
+  </div>
     </>
   )
 }
