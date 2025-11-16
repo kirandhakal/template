@@ -10,9 +10,11 @@ export const SchoolReading = () => {
   return (
     <>
   <Header></Header>
-  <TitleSection />
+  <TitleSection Name={"SCHOOL"}/>
   <DetaileFile></DetaileFile>
- <TableComponents />
+    <TableComponents classes={["UKG ", "CLASS 1 ", "CLASS 3 ", "CLASS 4 "]} nepaliclasses={["युकेजी", "कक्षा १", "कक्षा २", "कक्षा ३"]} />
+
+ {/* <TableComponents /> */}
   <Footer />
     </>
   )

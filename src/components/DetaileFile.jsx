@@ -10,19 +10,19 @@ export default function DetaileFile() {
 <div class="DetaileFile">
   <div class="description">
     <div class="school">
-      <span class="label">School :  <span class="dots">...........</span></span>
+      <span class="label">School :  <span class="dots">..............................................................................................</span></span>
      
     </div>
 
     <div class="info-row">
    
-        <span class="label">Class :  <span class="dots">................</span></span>
+        <span class="label">Class From :  <span class="dots">...................</span></span>
        
   
-      <div class="section">
+      {/* <div class="section">
         <span class="label">Section :  <span class="dots">.............</span></span>
       
-      </div>
+      </div> */}
       <div class="assessment">
         <span class="label">Assessment Date : <span class="dots">..............</span></span>
       

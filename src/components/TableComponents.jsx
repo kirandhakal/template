@@ -12,14 +12,14 @@ const TableComponents = ({classes , nepaliclasses}) => {
     { sn: 6, skill: "Loud Reading Skills & Fluency (LRSF)" },
   ];
 
-  const nepaliSkills = [
-    { sn: 1, skill: "अक्षर तथा संकेतहरुको पहिचान (RSL" },
-    { sn: 2, skill: "अक्षर तथा शब्दहरुको प्रष्ट उच्चारण (PAUP)" },
-    { sn: 3, skill: "शब्द र चित्रको अर्थपूर्ण पहिचान र प्रयोग (IWC)" },
-    { sn: 4, skill: "आधारभूत बोध र प्रश्न उत्तर क्षमता (BCS)" },
-    { sn: 5, skill: "पाठको सार, सन्दर्भ र उपयोगिताको बुझाई (UTC)" },
-    { sn: 6, skill: "सस्वर वाचन, पठन गति र प्रवाह (LRSF)" },
-  ];
+const nepaliSkills = [
+  { sn: "१", skill: "अक्षर तथा संकेतहरुको पहिचान (RSL)" },
+  { sn: "२", skill: "अक्षर तथा शब्दहरुको प्रष्ट उच्चारण (PAUP)" },
+  { sn: "३", skill: "शब्द र चित्रको अर्थपूर्ण पहिचान र प्रयोग (IWC)" },
+  { sn: "४", skill: "आधारभूत बोध र प्रश्न उत्तर क्षमता (BCS)" },
+  { sn: "५", skill: "पाठको सार, सन्दर्भ र उपयोगिताको बुझाई (UTC)" },
+  { sn: "६", skill: "सस्वर वाचन, पठन गति र प्रवाह (LRSF)" },
+];
 
   // const classes = ["UKG", "Class 1", "Class 2", "Class 3"];
 
@@ -50,6 +50,8 @@ const TableComponents = ({classes , nepaliclasses}) => {
           ))}
         </tbody>
       </table>
+          
+      <h2>नेपाली</h2 >
 
       <h1>नेपाली</h1>
       <table>
