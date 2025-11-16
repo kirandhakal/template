@@ -1,7 +1,7 @@
 import React from "react";
 import "../assets/css/TableComponent.css";
 
-const TableComponents = () => {
+const TableComponents = ({classes , nepaliclasses}) => {
   // Static data for the table
   const englishSkills = [
     { sn: 1, skill: "Recognition of Symbols and Letters (RSL)" },
@@ -21,9 +21,9 @@ const TableComponents = () => {
     { sn: 6, skill: "सस्वर वाचन, पठन गति र प्रवाह (LRSF)" },
   ];
 
-  const classes = ["UKG", "Class 1", "Class 2", "Class 3"];
+  // const classes = ["UKG", "Class 1", "Class 2", "Class 3"];
 
-  const nepaliclasses = ["युकेजी", "कक्षा १", "कक्षा २", "कक्षा ३"];
+  // const nepaliclasses = ["युकेजी", "कक्षा १", "कक्षा २", "कक्षा ३"];
 
   return (
     <div className="table-container">
@@ -34,7 +34,7 @@ const TableComponents = () => {
             <th>S.N.</th>
             <th>Reading Assessment Components</th>
             {classes.map((cls) => (
-              <th key={cls}>{cls}</th>
+              <th key={cls} className="">{cls}</th>
             ))}
           </tr>
         </thead>
@@ -51,7 +51,7 @@ const TableComponents = () => {
         </tbody>
       </table>
 
-      <h2>नेपाली</h2>
+      <h1>नेपाली</h1>
       <table>
         <thead>
           <tr>

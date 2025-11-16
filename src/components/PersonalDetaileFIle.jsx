@@ -1,16 +1,15 @@
-
-import React from 'react'
-import '../assets/css/Personalreading.css'
+import React from "react";
+import "../assets/css/Personalreading.css";
 
 export default function StudentReportForm({ student = {} }) {
   const {
-    name = '',
-    className = '',
-    section = '',
-    school = '',
-    schoolAddress = '',
-    assessmentDate = '',
-  } = student
+    name = "",
+    className = "",
+    section = "",
+    school = "",
+    schoolAddress = "",
+    assessmentDate = "",
+  } = student;
 
   return (
     <div className="student-card">
@@ -32,7 +31,7 @@ export default function StudentReportForm({ student = {} }) {
       </div>
 
       <div className="row">
-        <label className="label">School :   ...................... </label>
+        <label className="label">School : ...................... </label>
         <div className="line">{school}</div>
       </div>
 
@@ -42,11 +41,11 @@ export default function StudentReportForm({ student = {} }) {
       </div>
 
       <div className="row">
-        <label className="label">Assessment date : ......................</label>
+        <label className="label">
+          Assessment date : ......................
+        </label>
         <div className="line short-line">{assessmentDate}</div>
       </div>
     </div>
-  )
+  );
 }
-
-

@@ -10,9 +10,11 @@ export const PersonalReading = () => {
   return (
     <>
       <Header></Header>
-      <TitleSection />
+      <TitleSection Name ="PERSONAL"/>
 <PersonalDetaileFile />
-        <TableComponents />
+ {/* <TableComponents /> */}
+        <TableComponents classes={["Test 1 DATE: ", "Test 2 DATE: ", "Test3 DATE: ", "REMARK "]} nepaliclasses={["Test 1 DATE: ", "Test 2 DATE: ", "Test3 DATE: ", "REMARK "]} />
+
       <IssusedDate />
       <Footer />
     </>
