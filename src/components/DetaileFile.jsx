@@ -1,11 +1,13 @@
 import React from "react";
 import Header from "./Header";
-import "../assets/css/ReportFile.css";
+// import "../assets/css/ReportFile.css";
+import "../assets/css/DetaileFile.css";
 
-export default function ReportFile() {
+export default function DetaileFile() {
   return (
+
     <>
-<div class="ReportFile">
+<div class="DetaileFile">
   <div class="description">
     <div class="school">
       <span class="label">School :  <span class="dots">...........</span></span>

@@ -1,0 +1,38 @@
+.table-container {
+      padding: 20px;
+    }
+
+    h2 {
+      color: #ec0d0d;
+      margin-bottom: 10px;
+      font-weight: 900;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      border: 2px solid #7db9e8; /* Outer table border in blue */
+      margin-bottom: 30px;
+    }
+
+    th, td {
+      border: 1px solid #7db9e8; /* Inner cell borders in blue */
+      padding: 8px;
+      text-align: left;
+    }
+
+    thead {
+      background: linear-gradient(
+        to right,
+        #7db9e8 10%,
+        #075697 62%,
+        #2b3ac2 99%,
+        #0e0c92 100%
+      );
+      color: white;
+      font-weight: bold;
+      font-size: 1rem;
+      border-bottom: 1px solid #7db9e8; /* Blue separation line */
+    }
+
+  

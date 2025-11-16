@@ -1,4 +1,4 @@
-import "../assets/css/ReportFile.css";
+import "../assets/css/DetaileFile.css";
 
 export const StudentTable = () => {
   return (

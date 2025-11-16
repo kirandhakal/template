@@ -1,5 +1,5 @@
 import React from 'react'
-import "../assets/css/ReportFile.css";
+import "../assets/css/DetaileFile.css";
 export const Footer = () => {
   return (
    <>
