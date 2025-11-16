@@ -10,7 +10,7 @@ function App() {
       {/* <h1>Class reading form</h1>
       <ClassReading />
       <br /> <br /> */}
-      <div> <h1> School reading form</h1></div>
+    
       <SchoolReading />
     
       </div>
