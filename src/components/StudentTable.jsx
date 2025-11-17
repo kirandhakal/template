@@ -39,7 +39,7 @@ export const StudentTable = () => {
 
             <tr>
               <td>1.</td>
-              <td>John Doe</td>
+              <td>John Doellllllllllllllllllllll</td>
               <td>A</td>
               <td>B</td>
               <td>A</td>

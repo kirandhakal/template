@@ -151,14 +151,15 @@ font-weight: 900;
 
 
 /* ------------------------------- Table-----------------------------  */
-/* MAIN CONTAINER */
+
 .student-table-container {
   width: 100%;
   background-color: #fff;
-  padding: 25px 40px !important;
+  /* padding: 25px 40px !important; */
+  padding: 25px!important;
   box-sizing: border-box;
   margin: 20px auto;
-  border: 1px solid #ddd;
+  border: 0px solid #ddd;
   border-radius: 10px;
   overflow-x: hidden !important;   /* disable horizontal scroll */
 }
@@ -187,7 +188,9 @@ font-weight: 900;
 .data-table thead th.th-name {
   min-width: 120px;                 /* reduced to fit smaller screens */
 }
-
+th-name{
+  width: 120px;
+}
 .data-table thead th.th-sn {
   width: 40px;
 }
@@ -209,6 +212,27 @@ font-weight: 900;
 .data-table tbody td:nth-child(2) {
   text-align: left;
   padding-left: 8px;
+}
+/* Make NAME column wider and prevent text wrap */
+.data-table thead th.th-name,
+.data-table tbody td.name-cell {
+  white-space: nowrap !important;       /* no line breaks */
+  width: 25% !important;                /* take good space */
+}
+
+/* Prevent SN + metrics from hogging width */
+.data-table thead th,
+.data-table tbody td {
+  max-width: 80px;                  
+  white-space: nowrap;                
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Let table redistribute space smartly */
+.data-table {
+  table-layout: fixed;
+  width: 100%;
 }
 
 
