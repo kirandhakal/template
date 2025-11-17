@@ -162,11 +162,11 @@ font-weight: 900;
 
 /* TABLE STYLES */
 .data-table {
-  width: 100%;
+  width: 80%;
   border-collapse: collapse;
   margin: 0 auto;         
-  /* margin : 0 20px 0 0; */
-  padding: 0;
+ 
+  /* padding: 10px; */
   font-family: "Poppins", sans-serif;
   color: #17191a;
 }
@@ -186,7 +186,7 @@ font-weight: 900;
 }
 
 .data-table thead th.th-sn {
-  width: 40px;
+  width: 20px;
 }
 
 .data-table thead th.th-language {
@@ -197,7 +197,7 @@ font-weight: 900;
 /* BODY */
 .data-table tbody td {
   border: 1px solid blue;
-  padding: 8px 4px;       
+  /* padding: 8px 4px;        */
 }
 
 
@@ -236,3 +236,6 @@ font-weight: 900;
   font-size: 14px;
   color: red;
 }
+
+
+
