@@ -28,7 +28,7 @@ const nepaliSkills = [
   return (
     <div className="table-container">
       <h2>ENGLISH</h2>
-      <table>
+      <table className="tablecomponent">
         <thead>
           <tr>
             <th>S.N.</th>
@@ -52,7 +52,7 @@ const nepaliSkills = [
       </table>
           
       <h2>नेपाली</h2 >
-      <table>
+      <table className="tablecomponent">
         <thead>
           <tr>
             <th>सि.न.</th>

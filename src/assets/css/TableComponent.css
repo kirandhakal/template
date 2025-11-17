@@ -11,7 +11,8 @@
       font-weight: 900;
     }
 
-    table {
+    .tablecomponent {
+      margin: auto;
       width: 100%;
       border-collapse: collapse;
       border: 2px solid #7db9e8; /* Outer table border in blue */
@@ -19,13 +20,13 @@
       max-height: 700px;
     }
 
-    th , td {
+    .tablecomponent th , td {
       border: 1px solid #7db9e8; /* Inner cell borders in blue */
       padding: 2px 4px;
       text-align: left;
     }
 
-    thead {
+    .tablecomponent thead {
       background: linear-gradient(
         to right,
         #7db9e8 10%,

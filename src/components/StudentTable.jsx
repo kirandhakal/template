@@ -3,7 +3,7 @@ import "../assets/css/DetaileFile.css";
 export const StudentTable = () => {
   return (
     <>
-      <div className="table-container">
+      <div className="student-table-container">
         <table className="data-table">
           <thead>
             <tr>
