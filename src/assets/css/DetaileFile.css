@@ -149,26 +149,29 @@ font-weight: 900;
   margin-left: 8px;
 }
 
-/*  */
+
 /* ------------------------------- Table-----------------------------  */
+/* MAIN CONTAINER */
 .student-table-container {
   width: 100%;
-  overflow-x: hidden;
   background-color: #fff;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  padding: 20px 30px!important;   
+  padding: 25px 40px !important;
   box-sizing: border-box;
+  margin: 20px auto;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow-x: hidden !important;   /* disable horizontal scroll */
 }
 
-/* TABLE STYLES */
+/* TABLE */
 .data-table {
-  width: 80%;
+  width: 100%;
   border-collapse: collapse;
-  margin: 0 auto;         
- 
-  /* padding: 10px; */
   font-family: "Poppins", sans-serif;
   color: #17191a;
+  table-layout: fixed;              /* force equal column widths */
+  word-wrap: break-word;            /* break long text */
+  overflow-wrap: break-word;        /* prevent overflow */
 }
 
 /* HEADER */
@@ -176,29 +179,38 @@ font-weight: 900;
   color: #403EC4;
   border: 1px solid #27409C;
   background-color: #C7CCE6;
-  padding: 8px 4px;       
+  padding: 8px 4px;
+  text-align: center;
+  font-size: 12px;
 }
 
 .data-table thead th.th-name {
-  min-width: 200px;
-  text-align: center;
-  padding-left: 10px;
+  min-width: 120px;                 /* reduced to fit smaller screens */
 }
 
 .data-table thead th.th-sn {
-  width: 20px;
-}
-
-.data-table thead th.th-language {
-  font-weight: bolder;
-  letter-spacing: 1px;
+  width: 40px;
 }
 
 /* BODY */
 .data-table tbody td {
-  border: 1px solid blue;
-  /* padding: 8px 4px;        */
+  border: 1px solid #4A63D1;
+  padding: 6px 4px;
+  text-align: center;
+  font-size: 12px;
 }
+
+.data-table tbody tr:nth-child(even) {
+  background: #f7f8ff;
+}
+
+/* Align SN + Name left */
+.data-table tbody td:first-child,
+.data-table tbody td:nth-child(2) {
+  text-align: left;
+  padding-left: 8px;
+}
+
 
 
 /* -------------------------------footer----------------------- */
