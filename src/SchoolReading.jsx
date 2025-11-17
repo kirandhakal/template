@@ -11,7 +11,7 @@ export const SchoolReading = () => {
       <div className="schoolReading">
         <Header></Header>
         <TitleSection Name={"SCHOOL"} />
-        <DetaileFile></DetaileFile>
+        <DetaileFile showSection={false}></DetaileFile>
         <TableComponents
           classes={["UKG ", " 1 ", " 2 ", " 3 "]}
           nepaliclasses={["युकेजी", " १", " २", " ३"]}

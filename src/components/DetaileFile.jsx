@@ -1,37 +1,59 @@
 import React from "react";
-import Header from "./Header";
-// import "../assets/css/ReportFile.css";
 import "../assets/css/DetaileFile.css";
 
-export default function DetaileFile() {
+export default function DetaileFile({
+  showSchool = true,
+  showClass = true,
+  showSection = true,
+  showAssessmentDate = true,
+}) {
   return (
+    <div className="DetaileFile">
+      <div className="description">
 
-    <>
-<div class="DetaileFile">
-  <div class="description">
-    <div class="school">
-      <span class="label">School :  <span class="dots">..............................................................................................</span></span>
-     
-    </div>
+        {/* SCHOOL */}
+        {showSchool && (
+          <div className="school">
+            <span className="label">
+              School :
+              <span className="dots">
+                ..............................................
+              </span>
+            </span>
+          </div>
+        )}
 
-    <div class="info-row">
-   
-        <span class="label">Class From :  <span class="dots">...................</span></span>
-       
-  
-      {/* <div class="section">
-        <span class="label">Section :  <span class="dots">.............</span></span>
-      
-      </div> */}
-      <div class="assessment">
-        <span class="label">Assessment Date : <span class="dots">..............</span></span>
-      
+        <div className="info-row">
+
+          {/* CLASS */}
+          {showClass && (
+            <span className="label">
+              Class From :
+              <span className="dots">...................</span>
+            </span>
+          )}
+
+          {/* SECTION */}
+          {showSection && (
+            <div className="section">
+              <span className="label">
+                Section :
+                <span className="dots">.............</span>
+              </span>
+            </div>
+          )}
+
+          {/* ASSESSMENT DATE */}
+          {showAssessmentDate && (
+            <div className="assessment">
+              <span className="label">
+                Assessment Date :
+                <span className="dots">..............</span>
+              </span>
+            </div>
+          )}
+        </div>
       </div>
     </div>
-  </div>
-</div>
-
-      
-    </>
   );
 }
