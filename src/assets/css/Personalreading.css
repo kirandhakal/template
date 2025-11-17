@@ -1,0 +1,70 @@
+.student-card {
+  max-width: 1000px;
+  margin: -32px 0 -60px 0;
+  padding: 18px 24px;
+  border: 0px solid;
+  /* border-radius: 8px; */
+  background: #fff;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial;
+  color: #111;
+}
+
+.row {
+  display: flex;
+  align-items: left;
+  gap: 12px;
+  margin: 12px 0;
+}
+
+.label {
+  /* min-width: 150px; */
+  font-weight: 400;
+  letter-spacing: 0.2px;
+}
+
+.name-line {
+  font-size: 15px;
+}
+
+.short-line {
+  width: 160px;
+  max-width: 45%;
+}
+
+.two-cols {
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  align-items: left;
+}
+
+.col {
+  display: flex;
+  flex-direction: left;
+  gap: 6px;
+  margin-right: 24px;
+}
+
+.issueddate {
+  display: flex;
+  justify-content: end;
+  background-color: #fff;
+  /* width: 100%; */
+  color: black;
+  align-items: end;
+  padding-right: 50px;
+  padding-top: -80px;
+  margin-top: -30px;
+}
+h1{
+  color: red;
+ font-weight: 900;
+}
+.box{
+  /* color: red; */
+  font-weight: 700;
+  padding: 20px;
+  /* display: flex; */
+}
