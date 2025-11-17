@@ -19,9 +19,9 @@
       max-height: 700px;
     }
 
-    th, td {
+    th , td {
       border: 1px solid #7db9e8; /* Inner cell borders in blue */
-      padding: 8px;
+      padding: 2px 4px;
       text-align: left;
     }
 

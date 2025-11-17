@@ -10,7 +10,8 @@ export const ClassReading = () => {
     <>
     
      <Header></Header>
-    <TitleSection />
+    {/* <TitleSection /> */}
+     <TitleSection Name ="CLASS"/>
     <DetaileFile></DetaileFile>
     <StudentTable />
     <Footer />

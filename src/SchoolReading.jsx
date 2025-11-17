@@ -13,8 +13,8 @@ export const SchoolReading = () => {
         <TitleSection Name={"SCHOOL"} />
         <DetaileFile></DetaileFile>
         <TableComponents
-          classes={["UKG ", "CLASS 1 ", "CLASS 3 ", "CLASS 4 "]}
-          nepaliclasses={["युकेजी", "कक्षा १", "कक्षा २", "कक्षा ३"]}
+          classes={["UKG ", " 1 ", " 2 ", " 3 "]}
+          nepaliclasses={["युकेजी", " १", " २", " ३"]}
         />
 
         {/* <TableComponents /> */}

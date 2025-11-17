@@ -22,8 +22,8 @@
   height: 80px;
   object-fit: contain;
   background-color: whitesmoke;
-  margin-top: 5px;
-  /* padding: 0 10px; */
+  margin: 20px;
+  padding:10px;
   border-radius: 5px;
 }
 
@@ -33,21 +33,21 @@
   align-items: center;
   justify-content: center;
   flex-grow: 1;
+  font-weight: 900;
   color: white; /* margin: 0 auto; */
-
  
 }
 
 .header-title {
 
-font-size: 1.5rem;
+font-size: 2rem;
 font-weight: 900;
-  padding: 10px;
+  padding: 4px;
  
 }
 .header-subtitle {
   font-size: 1.5rem;
-  /* margin: 2px 0 0 0; */
+  margin-top: -4px;
 }
 
 /* .image{
@@ -87,10 +87,10 @@ font-weight: 900;
   padding: 0.5rem ;
 }
 .title h1{
-    padding: 0 2rem;
-    font-weight: 9000;
-  font-size: 1rem;
-    letter-spacing:-2px;
+    padding: 0 55px;
+    font-weight: 900;
+  font-size: 1.8rem;
+    letter-spacing: -2px;
 }
 
 /* 🧾 report-form- Section */
@@ -98,7 +98,7 @@ font-weight: 900;
   color: rgb(19, 17, 17);
   width: 100%;
 
-  margin-right: 10px;
+  /* margin-right: 10px; */
   /* padding: 0 5px; */
   background-color: white;
   margin-bottom: -30px;
@@ -109,7 +109,7 @@ font-weight: 900;
   display: flex;
   flex-direction: column;
   gap: 8px;
-  padding: 0 25px;
+  padding: 0 25px 45px;
 }
 
 .school {
