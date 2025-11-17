@@ -1,21 +1,26 @@
-import { ClassReading } from './ClassReading'
-import { SchoolReading } from './SchoolReading'
-import './App.css'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import Navbar from "./NavBar";
+import NavBar from "./components/NavBar";
+
+import { ClassReading } from './ClassReading';
+import { SchoolReading } from './SchoolReading';
+
+import './App.css';
 
 function App() {
-  
   return (
-    <>
-    <div className="app">
-      {/* <h1>Class reading form</h1>
-      <ClassReading />
-      <br /> <br /> */}
-    
-      <SchoolReading />
-    
+    <Router>
+      {/* <NavBar /> */}
+
+      <div className="app">
+        <Routes>
+          
+          <Route path="/class" element={<ClassReading />} />
+          <Route path="/school" element={<SchoolReading />} />
+        </Routes>
       </div>
-    </>
-  )
+    </Router>
+  );
 }
 
-export default App
+export default App;
