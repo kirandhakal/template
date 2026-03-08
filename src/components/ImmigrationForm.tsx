@@ -77,10 +77,9 @@ const ImmigrationForm: React.FC<ImmigrationFormProps> = ({ data }) => {
           </h1>
         </div>
 
-        {/* Organization Header */}
         <div className="mb-3 text-xs leading-tight text-left">
           <p style={{ fontFamily: 'Devanagari, serif', fontWeight: 'bold' }}>श्री अप्यायमान कार्यालय, दिउ.कि.प्र.,</p>
-          <p style={{ fontFamily: 'Devanagari, serif' , fontWeight: 'bold'}}>गौचर, काठमाडौँ ।</p>
+          <p style={{ fontFamily: 'Devanagari, serif' , fontWeight: 'black'}}>गौचर, काठमाडौँ ।</p>
         </div>
 
         {/* Main Content */}
@@ -253,7 +252,7 @@ const ImmigrationForm: React.FC<ImmigrationFormProps> = ({ data }) => {
         {/* Signature Section */}
         <div className="flex mb-6 gap-2 items-start">
           {/* Thumb Table */}
-          <table className="border-2 border-black text-xs border-collapse bg-white" style={{ minWidth: 160 }}>
+          <table className="border-2 border-black text-xs border-collapse bg-white px-4" style={{ minWidth: 160 }}>
             <thead>
               <tr>
                 <th className="border-2 border-black p-2 text-center">दायाँ</th>
