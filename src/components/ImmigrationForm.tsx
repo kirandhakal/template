@@ -148,45 +148,62 @@ const ImmigrationForm: React.FC<ImmigrationFormProps> = ({ data }) => {
         </div>
 
         {/* Form Fields */}
-        <div className="text-xs space-y-2 mb-4" style={{ fontFamily: 'Devanagari, serif' }}>
+        <div className="text-xs space-y-2 mb-4 " style={{ fontFamily: 'Devanagari, serif' }}>
           <div className="flex items-baseline gap-2">
-            <span >स्व-घोषणा गर्न व्यक्तिको नाम, यट:</span>
-            <input
-              type="text"
-              value={formState.personName}
-              onChange={(e) => handleInputChange('personName', e.target.value)}
-              className="flex-1 border-b border-black focus:outline-none bg-transparent px-1"
-            />
+            <span>स्व-घोषणा गर्न व्यक्तिको नाम, यट:</span>
+            <span className="flex-1">
+              ..........................................
+              <input
+                type="text"
+                value={formState.personName}
+                onChange={(e) => handleInputChange('personName', e.target.value)}
+                className="bg-transparent border-none outline-none px-1 w-32 text-xs text-black inline-block"
+                style={{ width: '120px', display: 'inline', background: 'transparent', border: 'none', outline: 'none' }}
+              />
+              ..........................................
+            </span>
           </div>
-
           <div className="flex items-baseline gap-2">
             <span>स्थायी ठेगना:</span>
-            <input
-              type="text"
-              value={formState.address}
-              onChange={(e) => handleInputChange('address', e.target.value)}
-              className="flex-1 border-b border-black focus:outline-none bg-transparent px-1"
-            />
+            <span className="flex-1">
+              ..........................................
+              <input
+                type="text"
+                value={formState.address}
+                onChange={(e) => handleInputChange('address', e.target.value)}
+                className="bg-transparent border-none outline-none px-1 w-32 text-xs text-black inline-block"
+                style={{ width: '120px', display: 'inline', background: 'transparent', border: 'none', outline: 'none' }}
+              />
+              ..........................................
+            </span>
           </div>
-
           <div className="flex items-baseline gap-2">
             <span>नेपालमा समपर्क न.:</span>
-            <input
-              type="text"
-              value={formState.passportNo}
-              onChange={(e) => handleInputChange('passportNo', e.target.value)}
-              className="flex-1 border-b border-black focus:outline-none bg-transparent px-1"
-            />
+            <span className="flex-1">
+              ..........................................
+              <input
+                type="text"
+                value={formState.passportNo}
+                onChange={(e) => handleInputChange('passportNo', e.target.value)}
+                className="bg-transparent border-none outline-none px-1 w-32 text-xs text-black inline-block"
+                style={{ width: '120px', display: 'inline', background: 'transparent', border: 'none', outline: 'none' }}
+              />
+              ..........................................
+            </span>
           </div>
-
           <div className="flex items-baseline gap-2">
             <span>नेपाल फर्कने मिति:</span>
-            <input
-              type="text"
-              value={formState.nepaliCitizenship}
-              onChange={(e) => handleInputChange('nepaliCitizenship', e.target.value)}
-              className="flex-1 border-b border-black focus:outline-none bg-transparent px-1"
-            />
+            <span className="flex-1">
+              ..........................................
+              <input
+                type="text"
+                value={formState.nepaliCitizenship}
+                onChange={(e) => handleInputChange('nepaliCitizenship', e.target.value)}
+                className="bg-transparent border-none outline-none px-1 w-32 text-xs text-black inline-block"
+                style={{ width: '120px', display: 'inline', background: 'transparent', border: 'none', outline: 'none' }}
+              />
+              ..........................................
+            </span>
           </div>
         </div>
 
@@ -234,19 +251,19 @@ const ImmigrationForm: React.FC<ImmigrationFormProps> = ({ data }) => {
         </div>
 
         {/* Signature Section */}
-        <div className="flex mb-6 gap-8 items-start">
+        <div className="flex mb-6 gap-2 items-start">
           {/* Thumb Table */}
-          <table className="border-2 border-black text-xs" style={{ minWidth: 160 }}>
+          <table className="border-2 border-black text-xs border-collapse bg-white" style={{ minWidth: 160 }}>
             <thead>
               <tr>
-                <th className="border-r-2 border-black p-2 text-center">दायाँ</th>
-                <th className="p-2 text-center">बायाँ</th>
+                <th className="border-2 border-black p-2 text-center">दायाँ</th>
+                <th className="border-2 border-black p-2 text-center">बायाँ</th>
               </tr>
             </thead>
             <tbody>
               <tr style={{ height: 60 }}>
-                <td className="border-r-2 border-black"></td>
-                <td></td>
+                <td className="border-2 border-black" style={{ width: '80px', height: '60px' }}></td>
+                <td className="border-2 border-black" style={{ width: '80px', height: '60px' }}></td>
               </tr>
             </tbody>
           </table>
