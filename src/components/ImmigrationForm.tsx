@@ -159,7 +159,7 @@ const ImmigrationForm: React.FC<ImmigrationFormProps> = ({ data }) => {
                 className="bg-transparent border-none outline-none px-1 w-32 text-xs text-black inline-block"
                 style={{ width: '120px', display: 'inline', background: 'transparent', border: 'none', outline: 'none' }}
               />
-              ..........................................
+           
             </span>
           </div>
           <div className="flex items-baseline gap-2">
@@ -173,7 +173,7 @@ const ImmigrationForm: React.FC<ImmigrationFormProps> = ({ data }) => {
                 className="bg-transparent border-none outline-none px-1 w-32 text-xs text-black inline-block"
                 style={{ width: '120px', display: 'inline', background: 'transparent', border: 'none', outline: 'none' }}
               />
-              ..........................................
+            
             </span>
           </div>
           <div className="flex items-baseline gap-2">
@@ -187,7 +187,7 @@ const ImmigrationForm: React.FC<ImmigrationFormProps> = ({ data }) => {
                 className="bg-transparent border-none outline-none px-1 w-32 text-xs text-black inline-block"
                 style={{ width: '120px', display: 'inline', background: 'transparent', border: 'none', outline: 'none' }}
               />
-              ..........................................
+         
             </span>
           </div>
           <div className="flex items-baseline gap-2">
@@ -201,43 +201,58 @@ const ImmigrationForm: React.FC<ImmigrationFormProps> = ({ data }) => {
                 className="bg-transparent border-none outline-none px-1 w-32 text-xs text-black inline-block"
                 style={{ width: '120px', display: 'inline', background: 'transparent', border: 'none', outline: 'none' }}
               />
-              ..........................................
+        
             </span>
           </div>
         </div>
 
         {/* Foreign Details */}
         <div className="text-xs space-y-2 mb-6" style={{ fontFamily: 'Devanagari, serif' }}>
-          <p className="font-bold">विदेशमा समपर्क गर्नका लागि:</p>
+          <p className="fontweight-bold">विदेशमा समपर्क गर्नका लागि:</p>
 
           <div className="flex items-baseline gap-2">
             <span>व्यक्ति/संस्थाको नाम:</span>
-            <input
-              type="text"
-              value={formState.foreignerDetails.name}
-              onChange={(e) => handleInputChange('foreignerDetails.name', e.target.value)}
-              className="flex-1 border-b border-black focus:outline-none bg-transparent px-1"
-            />
+            <span className="flex-1">
+              ..........................................
+              <input
+                type="text"
+                value={formState.foreignerDetails.name}
+                onChange={(e) => handleInputChange('foreignerDetails.name', e.target.value)}
+                className="bg-transparent border-none outline-none px-1 w-32 text-xs text-black inline-block"
+                style={{ width: '120px', display: 'inline', background: 'transparent', border: 'none', outline: 'none' }}
+              />
+             
+            </span>
           </div>
 
           <div className="flex items-baseline gap-2">
             <span>ठेगना:</span>
-            <input
-              type="text"
-              value={formState.foreignerDetails.location}
-              onChange={(e) => handleInputChange('foreignerDetails.location', e.target.value)}
-              className="flex-1 border-b border-black focus:outline-none bg-transparent px-1"
-            />
+            <span className="flex-1">
+              ..........................................
+              <input
+                type="text"
+                value={formState.foreignerDetails.location}
+                onChange={(e) => handleInputChange('foreignerDetails.location', e.target.value)}
+                className="bg-transparent border-none outline-none px-1 w-32 text-xs text-black inline-block"
+                style={{ width: '120px', display: 'inline', background: 'transparent', border: 'none', outline: 'none' }}
+              />
+           
+            </span>
           </div>
 
           <div className="flex items-baseline gap-2">
             <span>समपर्क न.:</span>
-            <input
-              type="text"
-              value={formState.foreignerDetails.passportNo}
-              onChange={(e) => handleInputChange('foreignerDetails.passportNo', e.target.value)}
-              className="flex-1 border-b border-black focus:outline-none bg-transparent px-1"
-            />
+            <span className="flex-1">
+              ..........................................
+              <input
+                type="text"
+                value={formState.foreignerDetails.passportNo}
+                onChange={(e) => handleInputChange('foreignerDetails.passportNo', e.target.value)}
+                className="bg-transparent border-none outline-none px-1 w-32 text-xs text-black inline-block"
+                style={{ width: '120px', display: 'inline', background: 'transparent', border: 'none', outline: 'none' }}
+              />
+         
+            </span>
           </div>
         </div>
 
