@@ -1,0 +1,49 @@
+{
+  "title": "स्व-घोषणा फाराम",
+  "organization": "श्री अप्यायमान कार्यालय, दिउ.कि.प्र.,\n गौचर, काठमाडौँ ।",
+  "travelAdvisoryNote": "सरकारले जारी गरेको यात्रा परामर्श अनुसार",
+  "passengerDetails": {
+    "name": "राज कुमार शर्मा",
+    "date": "2026-03-08",
+    "category": "पर्यटक",
+    "location": "काठमाडौँ",
+    "travelPurpose": "पर्यटन"
+  },
+  "documents": [
+    {
+      "id": "1",
+      "name": "क. कर्मिता र महिना म्याद भएको राहदानी",
+      "submitted": false,
+      "received": false
+    },
+    {
+      "id": "2",
+      "name": "ख. गन्तब्य देशको बैंक बिषा",
+      "submitted": false,
+      "received": false
+    },
+    {
+      "id": "3",
+      "name": "ग. गन्तब्य देशमको हवाई टिकट",
+      "submitted": false,
+      "received": false
+    }
+  ],
+  "personName": "",
+  "address": "",
+  "passportNo": "",
+  "nepaliCitizenship": "",
+  "foreignerDetails": {
+    "name": "",
+    "location": "",
+    "passportNo": ""
+  },
+  "photos": {
+    "right": "",
+    "left": ""
+  },
+  "signature": {
+    "name": "",
+    "date": ""
+  }
+}
