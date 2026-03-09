@@ -85,13 +85,13 @@ const ImmigrationForm: React.FC<ImmigrationFormProps> = ({ data }) => {
                     </h1>
                 </div>
 
-                <div style={{ marginBottom: '6pt', lineHeight: '1.2', fontSize: '10pt' }}>
+                <div style={{ marginBottom: '6pt', lineHeight: '1.2', fontSize: '10pt', fontWeight: 'bold' }}>
                     <p style={{ fontWeight: 'bold', margin: '2pt 0' }}>श्री अप्यायमान कार्यालय, त्रि.कि.प्र.,</p>
                     <p style={{ fontWeight: 'bold', margin: '2pt 0' }}>गौचर, काठमाडौँ ।</p>
                 </div>
 
                 {/* Main Content */}
-                <div style={{ marginBottom: '8pt', lineHeight: '1.4', fontSize: '10pt' }}>
+                <div style={{ marginBottom: '8pt', lineHeight: '1.4', fontSize: '10pt', fontWeight: 'bold' }}>
                     <div>
                         <span>पस्तुत विषयमा म</span>
                         <span style={{
@@ -138,10 +138,10 @@ const ImmigrationForm: React.FC<ImmigrationFormProps> = ({ data }) => {
                         करकाप/पुलसमेना नपरी नितान्त रूपमा भ्रमण गर्न प्रयोजनका लागि प्रश्यान गर्न लाकोको कूरा
                     </p>
                     <p style={{ margin: '4pt 0' }}>
-                        स्व-घोषणा गदछु। साथे नेपाल सरकारले जारी गरेको यात्रा परामर्श (Travel Advisory) को
+                        <b>स्व-घोषणा गदछु। साथे नेपाल सरकारले जारी गरेको यात्रा परामर्श (Travel Advisory) को</b>
                     </p>
                     <p style={{ margin: '4pt 0' }}>
-                        बारेमा राम्रोसँग जानकारी रहेको छ।
+                        <b>बारेमा राम्रोसँग जानकारी रहेको छ।</b>
                     </p>
                 </div>
 
@@ -151,7 +151,8 @@ const ImmigrationForm: React.FC<ImmigrationFormProps> = ({ data }) => {
                         width: '100%',
                         borderCollapse: 'collapse',
                         border: '1px solid #000',
-                        fontSize: '10pt'
+                        fontSize: '10pt',
+                        fontWeight: 'bold'
                     }}>
                         <thead>
                             <tr>
@@ -212,7 +213,7 @@ const ImmigrationForm: React.FC<ImmigrationFormProps> = ({ data }) => {
                 {/* Form Fields */}
                 <div style={{ fontSize: '10pt', marginBottom: '8pt', lineHeight: '1.6' }}>
                     <div style={{ display: 'flex', alignItems: 'baseline', gap: '8px', marginBottom: '4pt' }}>
-                        <span style={{ whiteSpace: 'nowrap' }}>स्व-घोषणा गर्न व्यक्तिको नाम, थर:</span>
+                        <span style={{ whiteSpace: 'nowrap', fontWeight: 'bold' }}>स्व-घोषणा गर्न व्यक्तिको नाम, थर:</span>
                         <span style={{
                             borderBottom: '1px solid #000',
                             flex: 1,
@@ -283,7 +284,7 @@ const ImmigrationForm: React.FC<ImmigrationFormProps> = ({ data }) => {
 
                 {/* Foreign Details */}
                 <div style={{ fontSize: '10pt', marginBottom: '8pt', lineHeight: '1.6' }}>
-                    <p style={{ fontWeight: 'bold', marginBottom: '4pt', margin: '0 0 4pt 0' }}>विदेशमा समपर्क गर्नका लागि:</p>
+                    <p style={{ fontWeight: 'bold', marginBottom: '4pt', margin: '0 0 4pt 0' }}><b>विदेशमा समपर्क गर्नका लागि:</b></p>
 
                     <div style={{ display: 'flex', alignItems: 'baseline', gap: '8px', marginBottom: '4pt' }}>
                         <span style={{ whiteSpace: 'nowrap' }}>व्यक्ति/संस्थाको नाम:</span>
@@ -343,8 +344,8 @@ const ImmigrationForm: React.FC<ImmigrationFormProps> = ({ data }) => {
                 {/* Disclaimer */}
                 <div style={{ fontSize: '10pt', marginBottom: '8pt', lineHeight: '1.4', fontWeight: 'bold' }}>
                     <p style={{ margin: '0' }}>
-                        संलग्न विषयहरु र मेरो पेशा गरेका कागजातहरु ठिक छन्। म भ्रमण प्रयोजनको लागि जान
-                        लागेको हो र यसबाट सिर्जित परिणाममा स्वयं जिम्मेवार रहनेछु ।
+                        <b>संलग्न विषयहरु र मेरो पेशा गरेका कागजातहरु ठिक छन्। म भ्रमण प्रयोजनको लागि जान
+                        लागेको हो र यसबाट सिर्जित परिणाममा स्वयं जिम्मेवार रहनेछु ।</b>
                     </p>
                 </div>
 
