@@ -63,64 +63,125 @@ const ImmigrationForm: React.FC<ImmigrationFormProps> = ({ data }) => {
         setFormState(newState);
     };
     return (
-        <div className="w-full min-h-screen bg-white">
+        <div className="w-full bg-white" style={{ margin: 0, padding: 0 }}>
             {/* Toolbar */}
 
 
             {/* Form Content */}
-            <div ref={formRef} className="max-w-3xl mx-auto p-8 bg-white">
+            <div ref={formRef} className="bg-white" style={{
+                maxWidth: '210mm',
+                margin: '0 auto',
+                padding: '12mm',
+                fontFamily: 'Devanagari, serif',
+                fontSize: '11pt',
+                lineHeight: '1.3',
+                color: '#000'
+            }}>
 
                 {/* Title */}
-                <div className="text-center mb-4">
-                    <h1 className="text-xl font-bold underline" style={{ fontFamily: 'Devanagari, serif' }}>
+                <div className="text-center" style={{ marginBottom: '8pt' }}>
+                    <h1 style={{ fontWeight: 'bold', textDecoration: 'underline', fontSize: '12pt', margin: '0' }}>
                         {formState.title}
                     </h1>
                 </div>
 
-                <div className="mb-3 text-xs leading-tight text-left">
-                    <p style={{ fontFamily: 'Devanagari, serif', fontWeight: 'bold' }}>श्री अप्यायमान कार्यालय, त्रि.कि.प्र.,</p>
-                    <p style={{ fontFamily: 'Devanagari, serif', fontWeight: 'black' }}>गौचर, काठमाडौँ ।</p>
+                <div style={{ marginBottom: '6pt', lineHeight: '1.2', fontSize: '10pt' }}>
+                    <p style={{ fontWeight: 'bold', margin: '2pt 0' }}>श्री अप्यायमान कार्यालय, त्रि.कि.प्र.,</p>
+                    <p style={{ fontWeight: 'bold', margin: '2pt 0' }}>गौचर, काठमाडौँ ।</p>
                 </div>
 
                 {/* Main Content */}
-                <div className="text-xs leading-relaxed mb-4" style={{ fontFamily: 'Devanagari, serif' }}>
-                    <p>
-                        पस्तुत विषयमा म{formState.personName || '..........................................'} राहदानी नं {formState.passportNo || '...................................'} बाहक
-                    </p>
-                    <p>
-                        पर्यटक/भिजिट भिसामा {formState.passengerDetails.location || '........................................'} देशमा जानका लागि कसैको
-                    </p>
-                    <p>
+                <div style={{ marginBottom: '8pt', lineHeight: '1.4', fontSize: '10pt' }}>
+                    <div>
+                        <span>पस्तुत विषयमा म</span>
+                        <span style={{
+                            borderBottom: '1px solid #000',
+                            display: 'inline-block',
+                            width: '140px',
+                            marginLeft: '4px',
+                            marginRight: '4px',
+                            verticalAlign: 'bottom',
+                            fontSize: '10pt'
+                        }}>
+                            {formState.personName || ''}
+                        </span>
+                        <span>राहदानी नं</span>
+                        <span style={{
+                            borderBottom: '1px solid #000',
+                            display: 'inline-block',
+                            width: '140px',
+                            marginLeft: '4px',
+                            marginRight: '4px',
+                            verticalAlign: 'bottom',
+                            fontSize: '10pt'
+                        }}>
+                            {formState.passportNo || ''}
+                        </span>
+                        <span>बाहक</span>
+                    </div>
+                    <div style={{ marginTop: '4pt' }}>
+                        <span>पर्यटक/भिजिट भिसामा</span>
+                        <span style={{
+                            borderBottom: '1px solid #000',
+                            display: 'inline-block',
+                            width: '180px',
+                            marginLeft: '4px',
+                            marginRight: '4px',
+                            verticalAlign: 'bottom',
+                            fontSize: '10pt'
+                        }}>
+                            {formState.passengerDetails.location || ''}
+                        </span>
+                        <span>देशमा जानका लागि कसैको</span>
+                    </div>
+                    <p style={{ margin: '4pt 0' }}>
                         करकाप/पुलसमेना नपरी नितान्त रूपमा भ्रमण गर्न प्रयोजनका लागि प्रश्यान गर्न लाकोको कूरा
                     </p>
-                    <p>
+                    <p style={{ margin: '4pt 0' }}>
                         स्व-घोषणा गदछु। साथे नेपाल सरकारले जारी गरेको यात्रा परामर्श (Travel Advisory) को
                     </p>
-                    <p>
+                    <p style={{ margin: '4pt 0' }}>
                         बारेमा राम्रोसँग जानकारी रहेको छ।
                     </p>
                 </div>
 
                 {/* Documents Table */}
-                <div className="mb-6">
-                    <table className="w-full border-2 border-black text-xs border-collapse">
+                <div style={{ marginBottom: '8pt' }}>
+                    <table style={{
+                        width: '100%',
+                        borderCollapse: 'collapse',
+                        border: '1px solid #000',
+                        fontSize: '10pt'
+                    }}>
                         <thead>
                             <tr>
-                                <th className="border-2 border-black p-2 text-left" style={{ width: '70%' }}>
+                                <th style={{
+                                    border: '1px solid #000',
+                                    padding: '4pt',
+                                    textAlign: 'left',
+                                    width: '70%',
+                                    fontWeight: 'bold'
+                                }}>
                                     संलग्न कागजातहरु
                                 </th>
-                                <th className="border-2 border-black p-2 text-center" style={{ width: '30%' }}>
+                                <th style={{
+                                    border: '1px solid #000',
+                                    padding: '4pt',
+                                    textAlign: 'center',
+                                    width: '30%',
+                                    fontWeight: 'bold'
+                                }}>
                                     केफियत
                                 </th>
                             </tr>
                         </thead>
                         <tbody>
                             {formState.documents.map((doc, index) => (
-                                <tr key={doc.id} className="border-2 border-black">
-                                    <td className="border-2 border-black p-2">{doc.name}</td>
-                                    <td className="border-2 border-black p-2">
-                                        <div className="flex justify-around items-center">
-                                            <label className="flex items-center gap-3 cursor-pointer">
+                                <tr key={doc.id} style={{ border: '1px solid #000' }}>
+                                    <td style={{ border: '1px solid #000', padding: '4pt' }}>{doc.name}</td>
+                                    <td style={{ border: '1px solid #000', padding: '4pt' }}>
+                                        <div style={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center' }}>
+                                            <label style={{ display: 'flex', alignItems: 'center', gap: '6px', cursor: 'pointer', fontSize: '9pt' }}>
                                                 <span>छु</span>
                                                 <Checkbox
                                                     checked={doc.submitted}
@@ -130,7 +191,7 @@ const ImmigrationForm: React.FC<ImmigrationFormProps> = ({ data }) => {
                                                 />
 
                                             </label>
-                                            <label className="flex items-center gap-3 cursor-pointer">
+                                            <label style={{ display: 'flex', alignItems: 'center', gap: '6px', cursor: 'pointer', fontSize: '9pt' }}>
                                                 <span>छैन</span>
                                                 <Checkbox
                                                     checked={doc.received}
@@ -149,149 +210,209 @@ const ImmigrationForm: React.FC<ImmigrationFormProps> = ({ data }) => {
                 </div>
 
                 {/* Form Fields */}
-                <div className="text-xs space-y-2 mb-4 " style={{ fontFamily: 'Devanagari, serif' }}>
-                    <div className="flex items-baseline gap-2">
-                        <span>स्व-घोषणा गर्न व्यक्तिको नाम, थर:</span>
-                        <span className="flex-1">
+                <div style={{ fontSize: '10pt', marginBottom: '8pt', lineHeight: '1.6' }}>
+                    <div style={{ display: 'flex', alignItems: 'baseline', gap: '8px', marginBottom: '4pt' }}>
+                        <span style={{ whiteSpace: 'nowrap' }}>स्व-घोषणा गर्न व्यक्तिको नाम, थर:</span>
+                        <span style={{
+                            borderBottom: '1px solid #000',
+                            flex: 1,
+                            display: 'inline-block',
+                            minHeight: '14px'
+                        }}>
                             <input
                                 type="text"
                                 value={formState.personName}
                                 onChange={(e) => handleInputChange('personName', e.target.value)}
-                                placeholder=".........................................."
-                                className="bg-transparent border-none outline-none px-1 w-32 text-xs text-black inline-block"
-                                style={{ width: '120px', display: 'inline', background: 'transparent', border: 'none', outline: 'none' }}
+                                className="bg-transparent border-none outline-none text-xs text-black"
+                                style={{ width: '100%', background: 'transparent', border: 'none', outline: 'none', fontSize: '10pt' }}
                             />
-
                         </span>
                     </div>
-                    <div className="flex items-baseline gap-2">
-                        <span>स्थायी ठेगना:</span>
-                        <span className="flex-1">
+                    <div style={{ display: 'flex', alignItems: 'baseline', gap: '8px', marginBottom: '4pt' }}>
+                        <span style={{ whiteSpace: 'nowrap' }}>स्थायी ठेगना:</span>
+                        <span style={{
+                            borderBottom: '1px solid #000',
+                            flex: 1,
+                            display: 'inline-block',
+                            minHeight: '14px'
+                        }}>
                             <input
                                 type="text"
                                 value={formState.address}
                                 onChange={(e) => handleInputChange('address', e.target.value)}
-                                placeholder=".........................................."
-                                className="bg-transparent border-none outline-none px-1 w-32 text-xs text-black inline-block"
-                                style={{ width: '120px', display: 'inline', background: 'transparent', border: 'none', outline: 'none' }}
+                                className="bg-transparent border-none outline-none text-xs text-black"
+                                style={{ width: '100%', background: 'transparent', border: 'none', outline: 'none', fontSize: '10pt' }}
                             />
-
                         </span>
                     </div>
-                    <div className="flex items-baseline gap-2">
-                        <span>नेपालमा समपर्क न.:</span>
-                        <span className="flex-1">
+                    <div style={{ display: 'flex', alignItems: 'baseline', gap: '8px', marginBottom: '4pt' }}>
+                        <span style={{ whiteSpace: 'nowrap' }}>नेपालमा समपर्क न.:</span>
+                        <span style={{
+                            borderBottom: '1px solid #000',
+                            flex: 1,
+                            display: 'inline-block',
+                            minHeight: '14px'
+                        }}>
                             <input
                                 type="text"
                                 value={formState.passportNo}
                                 onChange={(e) => handleInputChange('passportNo', e.target.value)}
-                                placeholder=".........................................."
-                                className="bg-transparent border-none outline-none px-1 w-32 text-xs text-black inline-block"
-                                style={{ width: '120px', display: 'inline', background: 'transparent', border: 'none', outline: 'none' }}
+                                className="bg-transparent border-none outline-none text-xs text-black"
+                                style={{ width: '100%', background: 'transparent', border: 'none', outline: 'none', fontSize: '10pt' }}
                             />
-
                         </span>
                     </div>
-                    <div className="flex items-baseline gap-2">
-                        <span>नेपाल फर्कने मिति:</span>
-                        <span className="flex-1">
+                    <div style={{ display: 'flex', alignItems: 'baseline', gap: '8px', marginBottom: '4pt' }}>
+                        <span style={{ whiteSpace: 'nowrap' }}>नेपाल फर्कने मिति:</span>
+                        <span style={{
+                            borderBottom: '1px solid #000',
+                            flex: 1,
+                            display: 'inline-block',
+                            minHeight: '14px'
+                        }}>
                             <input
                                 type="text"
                                 value={formState.nepaliCitizenship}
                                 onChange={(e) => handleInputChange('nepaliCitizenship', e.target.value)}
-                                placeholder=".........................................."
-                                className="bg-transparent border-none outline-none px-1 w-32 text-xs text-black inline-block"
-                                style={{ width: '120px', display: 'inline', background: 'transparent', border: 'none', outline: 'none' }}
+                                className="bg-transparent border-none outline-none text-xs text-black"
+                                style={{ width: '100%', background: 'transparent', border: 'none', outline: 'none', fontSize: '10pt' }}
                             />
-
                         </span>
                     </div>
                 </div>
 
                 {/* Foreign Details */}
-                <div className="text-xs space-y-2 mb-6" style={{ fontFamily: 'Devanagari, serif' }}>
-                    <p className="fontweight-bold">विदेशमा समपर्क गर्नका लागि:</p>
+                <div style={{ fontSize: '10pt', marginBottom: '8pt', lineHeight: '1.6' }}>
+                    <p style={{ fontWeight: 'bold', marginBottom: '4pt', margin: '0 0 4pt 0' }}>विदेशमा समपर्क गर्नका लागि:</p>
 
-                    <div className="flex items-baseline gap-2">
-                        <span>व्यक्ति/संस्थाको नाम:</span>
-                        <span className="flex-1">
+                    <div style={{ display: 'flex', alignItems: 'baseline', gap: '8px', marginBottom: '4pt' }}>
+                        <span style={{ whiteSpace: 'nowrap' }}>व्यक्ति/संस्थाको नाम:</span>
+                        <span style={{
+                            borderBottom: '1px solid #000',
+                            flex: 1,
+                            display: 'inline-block',
+                            minHeight: '14px'
+                        }}>
                             <input
                                 type="text"
                                 value={formState.foreignerDetails.name}
                                 onChange={(e) => handleInputChange('foreignerDetails.name', e.target.value)}
-                                placeholder=".........................................."
-                                className="bg-transparent border-none outline-none px-1 w-32 text-xs text-black inline-block"
-                                style={{ width: '120px', display: 'inline', background: 'transparent', border: 'none', outline: 'none' }}
+                                className="bg-transparent border-none outline-none text-xs text-black"
+                                style={{ width: '100%', background: 'transparent', border: 'none', outline: 'none', fontSize: '10pt' }}
                             />
-
                         </span>
                     </div>
 
-                    <div className="flex items-baseline gap-2">
-                        <span>ठेगना:</span>
-                        <span className="flex-1">
+                    <div style={{ display: 'flex', alignItems: 'baseline', gap: '8px', marginBottom: '4pt' }}>
+                        <span style={{ whiteSpace: 'nowrap' }}>ठेगना:</span>
+                        <span style={{
+                            borderBottom: '1px solid #000',
+                            flex: 1,
+                            display: 'inline-block',
+                            minHeight: '14px'
+                        }}>
                             <input
                                 type="text"
                                 value={formState.foreignerDetails.location}
                                 onChange={(e) => handleInputChange('foreignerDetails.location', e.target.value)}
-                                placeholder=".........................................."
-                                className="bg-transparent border-none outline-none px-1 w-32 text-xs text-black inline-block"
-                                style={{ width: '120px', display: 'inline', background: 'transparent', border: 'none', outline: 'none' }}
+                                className="bg-transparent border-none outline-none text-xs text-black"
+                                style={{ width: '100%', background: 'transparent', border: 'none', outline: 'none', fontSize: '10pt' }}
                             />
-
                         </span>
                     </div>
 
-                    <div className="flex items-baseline gap-2">
-                        <span>समपर्क न.:</span>
-                        <span className="flex-1">
+                    <div style={{ display: 'flex', alignItems: 'baseline', gap: '8px' }}>
+                        <span style={{ whiteSpace: 'nowrap' }}>समपर्क न.:</span>
+                        <span style={{
+                            borderBottom: '1px solid #000',
+                            flex: 1,
+                            display: 'inline-block',
+                            minHeight: '14px'
+                        }}>
                             <input
                                 type="text"
                                 value={formState.foreignerDetails.passportNo}
                                 onChange={(e) => handleInputChange('foreignerDetails.passportNo', e.target.value)}
-                                placeholder=".........................................."
-                                className="bg-transparent border-none outline-none px-1 w-32 text-xs text-black inline-block"
-                                style={{ width: '120px', display: 'inline', background: 'transparent', border: 'none', outline: 'none' }}
+                                className="bg-transparent border-none outline-none text-xs text-black"
+                                style={{ width: '100%', background: 'transparent', border: 'none', outline: 'none', fontSize: '10pt' }}
                             />
-
                         </span>
                     </div>
                 </div>
 
                 {/* Disclaimer */}
-                <div className="text-xs leading-relaxed mb-6" style={{ fontFamily: 'Devanagari, serif', fontWeight: 'bold' }}>
-                    <p>
+                <div style={{ fontSize: '10pt', marginBottom: '8pt', lineHeight: '1.4', fontWeight: 'bold' }}>
+                    <p style={{ margin: '0' }}>
                         संलग्न विषयहरु र मेरो पेशा गरेका कागजातहरु ठिक छन्। म भ्रमण प्रयोजनको लागि जान
                         लागेको हो र यसबाट सिर्जित परिणाममा स्वयं जिम्मेवार रहनेछु ।
                     </p>
                 </div>
 
                 {/* Signature Section */}
-                <div className="flex mb-6 gap-2 items-start">
+                <div style={{ display: 'flex', gap: '16px', alignItems: 'flex-start', marginBottom: '8pt' }}>
                     {/* Thumb Table */}
-                    <table className="border-2 border-black text-xs border-collapse bg-white px-4" style={{ minWidth: 160 }}>
+                    <table style={{
+                        borderCollapse: 'collapse',
+                        border: '1px solid #000',
+                        fontSize: '10pt',
+                        minWidth: '140px'
+                    }}>
                         <thead>
                             <tr>
-                                <th className="border-2 border-black p-2 text-center">दायाँ</th>
-                                <th className="border-2 border-black p-2 text-center">बायाँ</th>
+                                <th style={{
+                                    border: '1px solid #000',
+                                    padding: '4pt',
+                                    textAlign: 'center',
+                                    fontWeight: 'bold'
+                                }}>दायाँ</th>
+                                <th style={{
+                                    border: '1px solid #000',
+                                    padding: '4pt',
+                                    textAlign: 'center',
+                                    fontWeight: 'bold'
+                                }}>बायाँ</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr style={{ height: 60 }}>
-                                <td className="border-2 border-black" style={{ width: '80px', height: '60px' }}></td>
-                                <td className="border-2 border-black" style={{ width: '80px', height: '60px' }}></td>
+                            <tr style={{ height: '60px' }}>
+                                <td style={{
+                                    border: '1px solid #000',
+                                    width: '70px',
+                                    height: '60px'
+                                }}></td>
+                                <td style={{
+                                    border: '1px solid #000',
+                                    width: '70px',
+                                    height: '60px'
+                                }}></td>
                             </tr>
                         </tbody>
                     </table>
                     {/* Signature/Date */}
-                    <div className="flex-1 flex flex-col justify-start gap-18 pl-8 px-4">
-                        <div className="flex items-center text-xs">
-                            <span className="inline-block" style={{ minWidth: 60 }}>हस्ताक्षर</span>
-                            {formState.signature.name || '.............................'}
+                    <div style={{ flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'flex-start', gap: '20px', paddingLeft: '16px', fontSize: '10pt' }}>
+                        <div style={{ display: 'flex', alignItems: 'center' }}>
+                            <span style={{ minWidth: '50px' }}>हस्ताक्षर</span>
+                            <span style={{
+                                borderBottom: '1px solid #000',
+                                flex: 1,
+                                display: 'inline-block',
+                                minHeight: '14px',
+                                marginLeft: '8px'
+                            }}>
+                                {formState.signature.name || ''}
+                            </span>
                         </div>
-                        <div className="flex items-center text-xs">
-                            <span className="inline-block" style={{ minWidth: 60 }}>मिति:</span>
-                            {formState.signature.date || '...........................'}
+                        <div style={{ display: 'flex', alignItems: 'center' }}>
+                            <span style={{ minWidth: '50px' }}>मिति:</span>
+                            <span style={{
+                                borderBottom: '1px solid #000',
+                                flex: 1,
+                                display: 'inline-block',
+                                minHeight: '14px',
+                                marginLeft: '8px'
+                            }}>
+                                {formState.signature.date || ''}
+                            </span>
                         </div>
                     </div>
                 </div>
@@ -301,15 +422,40 @@ const ImmigrationForm: React.FC<ImmigrationFormProps> = ({ data }) => {
 
             <style>{`
         @media print {
-          .no-print {
-            display: none !important;
+          * {
+            -webkit-print-color-adjust: exact !important;
+            print-color-adjust: exact !important;
+            color-adjust: exact !important;
           }
+          
           body {
             margin: 0;
             padding: 0;
+            background: white;
           }
+          
           #root {
             background: white;
+          }
+          
+          html, body, #root {
+            width: 210mm;
+            height: 297mm;
+          }
+          
+          .no-print {
+            display: none !important;
+          }
+          
+          @page {
+            size: A4;
+            margin: 0;
+          }
+        }
+        
+        @media screen {
+          div[ref] {
+            box-shadow: 0 0 0 1px #ddd;
           }
         }
       `}</style>
