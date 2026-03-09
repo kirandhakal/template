@@ -78,26 +78,26 @@ const ImmigrationForm: React.FC<ImmigrationFormProps> = ({ data }) => {
                 </div>
 
                 <div className="mb-3 text-xs leading-tight text-left">
-                    <p style={{ fontFamily: 'Devanagari, serif', fontWeight: 'bold' }}>श्री अप्यायमान कार्यालय, दिउ.कि.प्र.,</p>
+                    <p style={{ fontFamily: 'Devanagari, serif', fontWeight: 'bold' }}>श्री अप्यायमान कार्यालय, त्रि.कि.प्र.,</p>
                     <p style={{ fontFamily: 'Devanagari, serif', fontWeight: 'black' }}>गौचर, काठमाडौँ ।</p>
                 </div>
 
                 {/* Main Content */}
                 <div className="text-xs leading-relaxed mb-4" style={{ fontFamily: 'Devanagari, serif' }}>
                     <p>
-                        पस्तुत विषयमा म..........................................राहदानी नं................................... बाटक
+                        पस्तुत विषयमा म{formState.personName || '..........................................'} राहदानी नं {formState.passportNo || '...................................'} बाहक
                     </p>
                     <p>
-                        पर्यटक/मिश्रित विषमा ........................................ देशमा जानका लागि कसेकी
+                        पर्यटक/भिजिट भिसामा {formState.passengerDetails.location || '........................................'} देशमा जानका लागि कसैको
                     </p>
                     <p>
-                        करकाप/पुलसमेना नपरी मितान्त रूपमा भ्रमण गर्न प्रयोजनका लागि प्रश्यान गर्न लाकोको कूरा
+                        करकाप/पुलसमेना नपरी नितान्त रूपमा भ्रमण गर्न प्रयोजनका लागि प्रश्यान गर्न लाकोको कूरा
                     </p>
                     <p>
                         स्व-घोषणा गदछु। साथे नेपाल सरकारले जारी गरेको यात्रा परामर्श (Travel Advisory) को
                     </p>
                     <p>
-                        बारेमा राधोंको जानकारी राखेको छ।
+                        बारेमा राम्रोसँग जानकारी रहेको छ।
                     </p>
                 </div>
 
@@ -107,7 +107,7 @@ const ImmigrationForm: React.FC<ImmigrationFormProps> = ({ data }) => {
                         <thead>
                             <tr>
                                 <th className="border-2 border-black p-2 text-left" style={{ width: '70%' }}>
-                                    सल्लह कागजातहरु
+                                    संलग्न कागजातहरु
                                 </th>
                                 <th className="border-2 border-black p-2 text-center" style={{ width: '30%' }}>
                                     केफियत
@@ -151,13 +151,13 @@ const ImmigrationForm: React.FC<ImmigrationFormProps> = ({ data }) => {
                 {/* Form Fields */}
                 <div className="text-xs space-y-2 mb-4 " style={{ fontFamily: 'Devanagari, serif' }}>
                     <div className="flex items-baseline gap-2">
-                        <span>स्व-घोषणा गर्न व्यक्तिको नाम, यट:</span>
+                        <span>स्व-घोषणा गर्न व्यक्तिको नाम, थर:</span>
                         <span className="flex-1">
-                            ..........................................
                             <input
                                 type="text"
                                 value={formState.personName}
                                 onChange={(e) => handleInputChange('personName', e.target.value)}
+                                placeholder=".........................................."
                                 className="bg-transparent border-none outline-none px-1 w-32 text-xs text-black inline-block"
                                 style={{ width: '120px', display: 'inline', background: 'transparent', border: 'none', outline: 'none' }}
                             />
@@ -167,11 +167,11 @@ const ImmigrationForm: React.FC<ImmigrationFormProps> = ({ data }) => {
                     <div className="flex items-baseline gap-2">
                         <span>स्थायी ठेगना:</span>
                         <span className="flex-1">
-                            ..........................................
                             <input
                                 type="text"
                                 value={formState.address}
                                 onChange={(e) => handleInputChange('address', e.target.value)}
+                                placeholder=".........................................."
                                 className="bg-transparent border-none outline-none px-1 w-32 text-xs text-black inline-block"
                                 style={{ width: '120px', display: 'inline', background: 'transparent', border: 'none', outline: 'none' }}
                             />
@@ -181,11 +181,11 @@ const ImmigrationForm: React.FC<ImmigrationFormProps> = ({ data }) => {
                     <div className="flex items-baseline gap-2">
                         <span>नेपालमा समपर्क न.:</span>
                         <span className="flex-1">
-                            ..........................................
                             <input
                                 type="text"
                                 value={formState.passportNo}
                                 onChange={(e) => handleInputChange('passportNo', e.target.value)}
+                                placeholder=".........................................."
                                 className="bg-transparent border-none outline-none px-1 w-32 text-xs text-black inline-block"
                                 style={{ width: '120px', display: 'inline', background: 'transparent', border: 'none', outline: 'none' }}
                             />
@@ -195,11 +195,11 @@ const ImmigrationForm: React.FC<ImmigrationFormProps> = ({ data }) => {
                     <div className="flex items-baseline gap-2">
                         <span>नेपाल फर्कने मिति:</span>
                         <span className="flex-1">
-                            ..........................................
                             <input
                                 type="text"
                                 value={formState.nepaliCitizenship}
                                 onChange={(e) => handleInputChange('nepaliCitizenship', e.target.value)}
+                                placeholder=".........................................."
                                 className="bg-transparent border-none outline-none px-1 w-32 text-xs text-black inline-block"
                                 style={{ width: '120px', display: 'inline', background: 'transparent', border: 'none', outline: 'none' }}
                             />
@@ -215,11 +215,11 @@ const ImmigrationForm: React.FC<ImmigrationFormProps> = ({ data }) => {
                     <div className="flex items-baseline gap-2">
                         <span>व्यक्ति/संस्थाको नाम:</span>
                         <span className="flex-1">
-                            ..........................................
                             <input
                                 type="text"
                                 value={formState.foreignerDetails.name}
                                 onChange={(e) => handleInputChange('foreignerDetails.name', e.target.value)}
+                                placeholder=".........................................."
                                 className="bg-transparent border-none outline-none px-1 w-32 text-xs text-black inline-block"
                                 style={{ width: '120px', display: 'inline', background: 'transparent', border: 'none', outline: 'none' }}
                             />
@@ -230,11 +230,11 @@ const ImmigrationForm: React.FC<ImmigrationFormProps> = ({ data }) => {
                     <div className="flex items-baseline gap-2">
                         <span>ठेगना:</span>
                         <span className="flex-1">
-                            ..........................................
                             <input
                                 type="text"
                                 value={formState.foreignerDetails.location}
                                 onChange={(e) => handleInputChange('foreignerDetails.location', e.target.value)}
+                                placeholder=".........................................."
                                 className="bg-transparent border-none outline-none px-1 w-32 text-xs text-black inline-block"
                                 style={{ width: '120px', display: 'inline', background: 'transparent', border: 'none', outline: 'none' }}
                             />
@@ -245,11 +245,11 @@ const ImmigrationForm: React.FC<ImmigrationFormProps> = ({ data }) => {
                     <div className="flex items-baseline gap-2">
                         <span>समपर्क न.:</span>
                         <span className="flex-1">
-                            ..........................................
                             <input
                                 type="text"
                                 value={formState.foreignerDetails.passportNo}
                                 onChange={(e) => handleInputChange('foreignerDetails.passportNo', e.target.value)}
+                                placeholder=".........................................."
                                 className="bg-transparent border-none outline-none px-1 w-32 text-xs text-black inline-block"
                                 style={{ width: '120px', display: 'inline', background: 'transparent', border: 'none', outline: 'none' }}
                             />
@@ -261,8 +261,8 @@ const ImmigrationForm: React.FC<ImmigrationFormProps> = ({ data }) => {
                 {/* Disclaimer */}
                 <div className="text-xs leading-relaxed mb-6" style={{ fontFamily: 'Devanagari, serif', fontWeight: 'bold' }}>
                     <p>
-                        संलग्न विषयहरु र मेरो पेशा गरेकी कागजातहरु हिक छन्। म भ्रमण प्रयोजनको लागि जान
-                        साधेकी हो र यसपछ्ट मिम्जित नुफिमान स्वयं निमेदार रहिछु।
+                        संलग्न विषयहरु र मेरो पेशा गरेका कागजातहरु ठिक छन्। म भ्रमण प्रयोजनको लागि जान
+                        लागेको हो र यसबाट सिर्जित परिणाममा स्वयं जिम्मेवार रहनेछु ।
                     </p>
                 </div>
 
@@ -284,14 +284,14 @@ const ImmigrationForm: React.FC<ImmigrationFormProps> = ({ data }) => {
                         </tbody>
                     </table>
                     {/* Signature/Date */}
-                    <div className="flex-1 flex flex-col justify-start gap-4 pl-8">
+                    <div className="flex-1 flex flex-col justify-start gap-18 pl-8 px-4">
                         <div className="flex items-center text-xs">
                             <span className="inline-block" style={{ minWidth: 60 }}>हस्ताक्षर</span>
-                            <span className="inline-block ml-2 border-b border-black flex-1" style={{ minWidth: 120 }}></span>
+                            {formState.signature.name || '.............................'}
                         </div>
                         <div className="flex items-center text-xs">
                             <span className="inline-block" style={{ minWidth: 60 }}>मिति:</span>
-                            <span className="inline-block ml-2 border-b border-black flex-1" style={{ minWidth: 120 }}></span>
+                            {formState.signature.date || '...........................'}
                         </div>
                     </div>
                 </div>
